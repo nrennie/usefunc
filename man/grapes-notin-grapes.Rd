@@ -4,7 +4,7 @@
 \alias{\%notin\%}
 \title{Not In}
 \usage{
-x %notin% y
+x%notin%y
 }
 \value{
 A boolean vector.
