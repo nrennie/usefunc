@@ -9,5 +9,5 @@
 
 hms_to_decimal <- function(data){
   x <- hms(data)
-  hour(x) + (minute(x)/60) + (second(x)/360)
+  hour(x) + (minute(x)/60) + (second(x)/3600)
 }
