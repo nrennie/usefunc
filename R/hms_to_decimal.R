@@ -4,10 +4,9 @@
 #'
 #' @param data Input vector or element in hh:mm:ss format.
 #' @return A numeric vector of times in hours.
-#' @importFrom lubridate hms
 #' @export
 
-hms_to_decimal <- function(data){
-  x <- hms(data)
-  hour(x) + (minute(x)/60) + (second(x)/3600)
+hms_to_decimal <- function(data) {
+  x <- lubridate::hms(data)
+  lubridate::hour(x) + (lubridate::minute(x) / 60) + (lubridate::second(x) / 3600)
 }

@@ -10,11 +10,10 @@
 #' diffs(c(1,5,7))
 #' @export
 
-diffs <- function(x){
-  if (length(x) == 1){
+diffs <- function(x) {
+  if (length(x) == 1) {
     return(x)
   } else {
     return(c(x[1], diff(x)))
   }
 }
-
