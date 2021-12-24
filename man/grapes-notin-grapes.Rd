@@ -4,14 +4,17 @@
 \alias{\%notin\%}
 \title{Not In}
 \usage{
-x%notin%y
+x \%notin\% y
+}
+\arguments{
+\item{x}{vector of elements to check}
+
+\item{y}{vector to check against}
 }
 \value{
 A boolean vector.
 }
 \description{
-This function negates the in function and returns true if the item before notin is not in the item after.
-}
-\examples{
-c(1,3) \%notin\% c(1,2,3)
+This function negates the in function and returns true if
+the item before notin is not in the item after.
 }

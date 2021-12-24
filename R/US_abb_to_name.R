@@ -11,6 +11,6 @@
 #' @seealso [US_name_to_abb()]
 #' @export
 
-US_abb_to_name <- function(x){
-  c(state.name, "District of Columbia")[match(x, c(state.abb, "DC"))]
+US_abb_to_name <- function(x) { # nolint
+  c(datasets::state.name, "District of Columbia")[match(x, c(datasets::state.abb, "DC"))]
 }
