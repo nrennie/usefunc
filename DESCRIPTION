@@ -1,6 +1,6 @@
 Package: usefunc
 Title: Useful Functions
-Version: 1.0.2
+Version: 1.0.3
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
@@ -14,4 +14,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports:
   datasets,
+  ggplot2,
   lubridate

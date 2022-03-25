@@ -1,5 +1,9 @@
 # usefunc
 
+# usefunc 1.0.3 2022_03_23
+
+* add custom ggplot theme
+
 # usefunc 1.0.2 2022_03_23
 
 * add GitHub actions
