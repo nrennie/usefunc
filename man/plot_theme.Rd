@@ -4,7 +4,13 @@
 \alias{plot_theme}
 \title{plot_theme}
 \usage{
-plot_theme(main_font = "sans", title_font = "sans", hjust = 0)
+plot_theme(
+  main_font = "sans",
+  title_font = "sans",
+  hjust = 0,
+  text_col = "black",
+  bg_col = "white"
+)
 }
 \arguments{
 \item{main_font}{Font used for all text elements except the title. Default "sans".}
@@ -12,6 +18,10 @@ plot_theme(main_font = "sans", title_font = "sans", hjust = 0)
 \item{title_font}{Font used for the title. Default "sans".}
 
 \item{hjust}{Horizontal alignment of title, subtitle, and caption. Default 0.}
+
+\item{text_col}{Text colour. Default "black".}
+
+\item{bg_col}{Background colour. Default "white".}
 }
 \value{
 A ggplot2 theme

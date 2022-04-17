@@ -1,4 +1,4 @@
-# usefunc <img src="usefunc.png" align="right" width="120" />
+# usefunc <img src="https://github.com/nrennie/aRt/blob/main/man/figures/usefunc.png?raw=true" align="right" width="120" />
 
 An R package with some additional useful functions.
 

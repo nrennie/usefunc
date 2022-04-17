@@ -1,5 +1,11 @@
 # usefunc
 
+# usefunc 1.0.4 2022_04_17
+
+* add text and bg col to ggplot theme
+* add `is_even()` function
+* add `is_odd()` function
+
 # usefunc 1.0.3 2022_03_23
 
 * add custom ggplot theme

@@ -1,6 +1,6 @@
 Package: usefunc
 Title: Useful Functions
-Version: 1.0.3
+Version: 1.0.4
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
@@ -16,3 +16,4 @@ Imports:
   datasets,
   ggplot2,
   lubridate
+URL: https://nrennie.github.io/usefunc/
