@@ -1,4 +1,9 @@
 url: https://nrennie.github.io/usefunc/
 template:
   bootstrap: 5
-
+home:
+  links:
+  - text: R Packages
+    href: https://nrennie.github.io/
+  - text: Website
+    href: https://nrennie.rbind.io/
