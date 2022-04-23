@@ -1,4 +1,12 @@
 url: https://nrennie.github.io/usefunc/
 template:
   bootstrap: 5
-
+  bootswatch: morph
+home:
+  links:
+  - text: Home
+    href: https://nrennie.github.io/
+  - text: Website
+    href: https://nrennie.rbind.io/
+  - text: Twitter
+    href: https://twitter.com/nrennie35

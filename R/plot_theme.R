@@ -26,7 +26,6 @@ plot_theme <- function(main_font = "sans",
       # subtitle
       plot.subtitle = ggplot2::element_text(family = main_font,
                                 size = 14,
-                                lineheight = 0.5,
                                 hjust = hjust,
                                 colour = text_col),
       # caption
@@ -57,8 +56,9 @@ plot_theme <- function(main_font = "sans",
       panel.background = ggplot2::element_rect(fill = bg_col,
                                                colour = bg_col),
       # legend
+      legend.position = "bottom",
       legend.text = ggplot2::element_text(family = main_font,
-                                 size = 12,
+                                 size = 10,
                                  colour = text_col),
       legend.title = ggplot2::element_text(family = main_font,
                                   size = 12,
@@ -67,7 +67,6 @@ plot_theme <- function(main_font = "sans",
                                        colour = "transparent"),
       legend.key = ggplot2::element_rect(fill = "transparent",
                                 colour = "transparent"),
-
       # facets
       strip.background = ggplot2::element_rect(fill = "transparent",
                                       colour = "transparent"),
