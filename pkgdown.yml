@@ -2,7 +2,7 @@ pandoc: 2.7.3
 pkgdown: 2.0.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-04-17T14:40Z
+last_built: 2022-04-23T12:35Z
 urls:
   reference: https://nrennie.github.io/usefunc/reference
   article: https://nrennie.github.io/usefunc/articles
