@@ -1,4 +1,6 @@
 url: https://nrennie.github.io/usefunc/
+template:
+  bootstrap: 5
 authors:
   Nicola Rennie:
     href: https://nrennie.rbind.io/
