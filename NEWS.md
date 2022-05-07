@@ -1,5 +1,3 @@
-# usefunc
-
 ## usefunc 1.0.5 2022_05_07
 
 * update license
