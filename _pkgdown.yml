@@ -1,7 +1,7 @@
 url: https://nrennie.github.io/usefunc/
-template:
-  bootstrap: 5
-  bootswatch: morph
+authors:
+  Nicola Rennie:
+    href: https://nrennie.rbind.io/
 home:
   links:
   - text: Home
