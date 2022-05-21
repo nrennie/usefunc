@@ -1,3 +1,7 @@
+## usefunc 1.0.6 2022_05_21
+
+* update pkgdown website
+
 ## usefunc 1.0.5 2022_05_07
 
 * update license
