@@ -1,3 +1,7 @@
+## usefunc 1.0.7 2022_05_28
+
+* add `last()` function
+
 ## usefunc 1.0.6 2022_05_21
 
 * update pkgdown website
