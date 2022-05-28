@@ -17,23 +17,19 @@ last <- function(x, type = "col") {
   }
   # if x vector
   if (class(x)[1] %in% c("numeric", "logical", "character")) {
-    output = tail(x, 1)
+    output <- utils::tail(x, 1)
   }
   # if x dataframe
   else if ("data.frame" %in% class(x)) {
     if (type == "col") {
-      output = x[ , ncol(x)]
+      output <- x[, ncol(x)]
     }
     else if (type == "row") {
-      output = x[nrow(x), ]
+      output <- x[nrow(x), ]
     }
   }
   else {
     stop("unknown input: must be data.frame or vector")
   }
   return(output)
-
 }
-
-
-
