@@ -1,3 +1,9 @@
+## usefunc 1.0.8 2022_08_14
+
+* add `current_folder()` function
+* add `search_google()` function
+* update linting
+
 ## usefunc 1.0.7 2022_05_28
 
 * add `last()` function
