@@ -8,10 +8,10 @@
 #' @export
 
 beta_params <- function(mu, var) {
-  if (mu <= 0 | mu >= 1) {
+  if (any(c(mu <= 0,  mu >= 1))) {
     stop("mean must be between 0 and 1")
   }
-  if (var <= 0 | var >= 0.25) {
+  if (any(c(var <= 0 | var >= 0.25))) {
     stop("variance must be between 0 and 0.25")
   }
   alpha <- (((1 - mu) / var) - (1 / mu)) * mu ^ 2
