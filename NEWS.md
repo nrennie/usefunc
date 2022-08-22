@@ -1,3 +1,8 @@
+## usefunc 1.0.9 2022_08_22
+
+* update GitHub actions
+* edit license
+
 ## usefunc 1.0.8 2022_08_14
 
 * add `current_folder()` function
