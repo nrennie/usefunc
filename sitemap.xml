@@ -4,9 +4,6 @@
     <loc>https://nrennie.github.io/usefunc/404.html</loc>
   </url>
   <url>
-    <loc>https://nrennie.github.io/usefunc/LICENSE-text.html</loc>
-  </url>
-  <url>
     <loc>https://nrennie.github.io/usefunc/LICENSE.html</loc>
   </url>
   <url>
@@ -26,6 +23,12 @@
   </url>
   <url>
     <loc>https://nrennie.github.io/usefunc/reference/beta_params.html</loc>
+  </url>
+  <url>
+    <loc>https://nrennie.github.io/usefunc/reference/complementary_color.html</loc>
+  </url>
+  <url>
+    <loc>https://nrennie.github.io/usefunc/reference/complementary_colour.html</loc>
   </url>
   <url>
     <loc>https://nrennie.github.io/usefunc/reference/current_folder.html</loc>
