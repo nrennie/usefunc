@@ -1,6 +1,6 @@
 Package: usefunc
 Title: Useful Functions
-Version: 1.0.9
+Version: 1.0.10
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
@@ -16,6 +16,7 @@ Imports:
   datasets,
   ggplot2,
   lubridate,
+  plotwidgets,
   rstudioapi,
   utils
 Config/Needs/website: nrennie/nrenniepkgdown

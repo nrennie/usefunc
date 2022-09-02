@@ -1,3 +1,7 @@
+## usefunc 1.0.10 2022_08_28
+
+* add `complementary_color()` function
+
 ## usefunc 1.0.9 2022_08_22
 
 * update GitHub actions
