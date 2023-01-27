@@ -1,3 +1,8 @@
+## usefunc 1.0.11 2023_01_26
+
+* add `function_docs_table()` function
+* add dependency on {dplyr}, {purrr}, {tibble}, {stringr}, {knitr}, {rlang} and {rd2list}
+
 ## usefunc 1.0.10 2022_08_28
 
 * add `complementary_color()` function

@@ -1,6 +1,6 @@
 Package: usefunc
 Title: Useful Functions
-Version: 1.0.10
+Version: 1.0.11
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
@@ -11,13 +11,22 @@ License: CC0
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Imports:
   datasets,
+  dplyr,
   ggplot2,
+  knitr,
   lubridate,
   plotwidgets,
+  purrr,
+  rd2list,
+  rlang,
   rstudioapi,
+  stringr,
+  tibble,
   utils
+Remotes:
+  coolbutuseless/rd2list
 Config/Needs/website: nrennie/nrenniepkgdown
 URL: https://nrennie.github.io/usefunc/
