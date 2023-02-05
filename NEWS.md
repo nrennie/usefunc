@@ -1,3 +1,7 @@
+## usefunc 1.0.12 2023_02_05
+
+* add `str_extract_between()` function
+
 ## usefunc 1.0.11 2023_01_26
 
 * add `function_docs_table()` function
