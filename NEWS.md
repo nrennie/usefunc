@@ -1,3 +1,7 @@
+## usefunc 1.0.13 2023_02_11
+
+* add `random_hex()` function
+
 ## usefunc 1.0.12 2023_02_05
 
 * add `str_extract_between()` function
