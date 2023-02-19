@@ -4,14 +4,17 @@
 \alias{random_hex}
 \title{Generates a random hex code}
 \usage{
-random_hex()
+random_hex(n)
+}
+\arguments{
+\item{n}{Number of hex codes to generate}
 }
 \value{
-Character string of a hex code
+Character string of hex codes
 }
 \description{
 Generates a random hex code
 }
 \examples{
-random_hex()
+random_hex(2)
 }

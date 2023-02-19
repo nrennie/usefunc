@@ -1,4 +1,4 @@
-## usefunc 1.0.13 2023_02_11
+## usefunc 1.0.13 2023_02_19
 
 * add `random_hex()` function
 
