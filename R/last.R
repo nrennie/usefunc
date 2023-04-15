@@ -20,7 +20,8 @@ last <- function(x, type = "col") {
     output <- utils::tail(x, 1)
   } else if ("data.frame" %in% class(x)) {
     if (type == "col") {
-      output <- x[, ncol(x)]
+      output <- as.data.frame(x[, ncol(x)])
+      names(output) <- names(x)[ncol(x)]
     } else if (type == "row") {
       output <- x[nrow(x), ]
     }
