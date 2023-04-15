@@ -1,3 +1,8 @@
+## usefunc 1.0.14 2023_04_15
+
+* update `last()` function to return data frame if column selected
+* add `none()` function
+
 ## usefunc 1.0.13 2023_02_19
 
 * add `random_hex()` function
