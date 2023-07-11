@@ -1,6 +1,6 @@
 Package: usefunc
 Title: Useful Functions
-Version: 1.0.14
+Version: 1.1.0
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
@@ -12,6 +12,8 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Depends:
+  R (>= 4.1)
 Imports:
   datasets,
   dplyr,
@@ -25,6 +27,7 @@ Imports:
   rstudioapi,
   stringr,
   tibble,
+  tidyr,
   utils
 Remotes:
   coolbutuseless/rd2list

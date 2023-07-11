@@ -1,3 +1,8 @@
+## usefunc 1.1.0 2023_07_11
+
+* add `viz_missing()` function
+* use base R pipe and force > R 4.1
+
 ## usefunc 1.0.14 2023_04_15
 
 * update `last()` function to return data frame if column selected
