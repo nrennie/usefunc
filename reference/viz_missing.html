@@ -78,7 +78,12 @@ are missing.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">viz_missing</span><span class="op">(</span><span class="va">data</span>, missing <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="cn">NA</span><span class="op">)</span>, show_rownames <span class="op">=</span> <span class="cn">TRUE</span>, show_colnames <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">viz_missing</span><span class="op">(</span></span>
+<span>  <span class="va">data</span>,</span>
+<span>  missing <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="cn">NA</span><span class="op">)</span>,</span>
+<span>  show_rownames <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  show_colnames <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -88,7 +93,7 @@ are missing.</p>
 
 
 <dt>missing</dt>
-<dd><p>Vector of values to define as missing. Default <code>c(NA)</code>.</p></dd>
+<dd><p>List of values to define as missing. Default <code>list(NA)</code>.</p></dd>
 
 
 <dt>show_rownames</dt>
