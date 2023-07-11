@@ -4,12 +4,17 @@
 \alias{viz_missing}
 \title{Visualise missing data}
 \usage{
-viz_missing(data, missing = c(NA), show_rownames = TRUE, show_colnames = TRUE)
+viz_missing(
+  data,
+  missing = list(NA),
+  show_rownames = TRUE,
+  show_colnames = TRUE
+)
 }
 \arguments{
 \item{data}{Data to visualise. Needs to be a data frame or tibble.}
 
-\item{missing}{Vector of values to define as missing. Default \code{c(NA)}.}
+\item{missing}{List of values to define as missing. Default \code{list(NA)}.}
 
 \item{show_rownames}{Boolean to determine if row names are printed.
 Default \code{TRUE}.}

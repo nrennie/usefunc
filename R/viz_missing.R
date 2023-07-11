@@ -3,7 +3,7 @@
 #' Create a heatmap showing which values in a dataframe
 #' are missing.
 #' @param data Data to visualise. Needs to be a data frame or tibble.
-#' @param missing Vector of values to define as missing. Default `c(NA)`.
+#' @param missing List of values to define as missing. Default `list(NA)`.
 #' @param show_rownames Boolean to determine if row names are printed.
 #' Default `TRUE`.
 #' @param show_colnames Boolean to determine if column names are printed.
@@ -13,7 +13,7 @@
 #' @export
 
 viz_missing <- function(data,
-                        missing = c(NA),
+                        missing = list(NA),
                         show_rownames = TRUE,
                         show_colnames = TRUE) {
   # check which values are missing
