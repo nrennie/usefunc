@@ -1,6 +1,3 @@
-date_chr <- "2023-08-01"
-date_strip <- stringr::str_remove_all(date_chr, "-")
-
 
 # Load packages -----------------------------------------------------------
 
@@ -38,7 +35,7 @@ highlight_col <- ""
 # Start recording ---------------------------------------------------------
 
 gg_record(
-  dir = file.path("2023", date_chr, "recording"),
+  dir = file.path(yr, date_chr, "recording"),
   device = "png",
   width = 7,
   height = 5,
@@ -69,7 +66,7 @@ cap <- paste0(
 # Save gif ----------------------------------------------------------------
 
 gg_playback(
-  name = file.path("2023", date_chr, paste0(date_strip, ".gif")),
+  name = file.path(yr, date_chr, paste0(date_strip, ".gif")),
   first_image_duration = 4,
   last_image_duration = 20,
   frame_duration = .25,
