@@ -31,13 +31,19 @@ use_tt_template <- function(date_chr = "2023-08-01",
     ))
     # replace placeholder text with variables
     r_txt <- gsub(
-      pattern = "yr", replace = paste0("\"", yr, "\""), x = r_txt
+      pattern = "yr",
+      replacement = paste0("\"", yr, "\""),
+      x = r_txt
     )
     r_txt <- gsub(
-      pattern = "date_chr", replace = paste0("\"", date_chr, "\""), x = r_txt
+      pattern = "date_chr",
+      replacement = paste0("\"", date_chr, "\""),
+      x = r_txt
     )
     r_txt <- gsub(
-      pattern = "date_strip", replace = paste0("\"", date_strip, "\""), x = r_txt
+      pattern = "date_strip",
+      replacement = paste0("\"", date_strip, "\""),
+      x = r_txt
     )
     # write to new file
     writeLines(r_txt, con = new_file)
@@ -57,13 +63,13 @@ use_tt_template <- function(date_chr = "2023-08-01",
       ))
       # replace placeholder text with variables
       readme_txt <- gsub(
-        pattern = "yr", replace = yr, x = readme_txt
+        pattern = "yr", replacement = yr, x = readme_txt
       )
       readme_txt <- gsub(
-        pattern = "date_chr", replace = date_chr, x = readme_txt
+        pattern = "date_chr", replacement = date_chr, x = readme_txt
       )
       readme_txt <- gsub(
-        pattern = "date_strip", replace = date_strip, x = readme_txt
+        pattern = "date_strip", replacement = date_strip, x = readme_txt
       )
       # write to file
       writeLines(readme_txt, con = new_readme)
