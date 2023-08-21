@@ -1,11 +1,11 @@
 #' Create folder and files for #TidyTuesday data viz
 #' @param date_chr Date of #TidyTuesday in yyyy-mm-dd format.
-#' @param README Boolean indicating whether to also use README template.
+#' @param readme Boolean indicating whether to also use README template.
 #' @return a message if template file was successfully copied over
 #' @export
 
 use_tt_template <- function(date_chr = "2023-08-01",
-                            README = TRUE) {
+                            readme = TRUE) {
   # check date in correct format
   if (is.na(as.Date(date_chr, format = "%Y-%m-%d"))) {
     stop("'date_chr' in incorrect format. Should be yyyy-mm-dd.")
@@ -44,7 +44,7 @@ use_tt_template <- function(date_chr = "2023-08-01",
     message("'.R' contents copied")
   }
 
-  if (README) {
+  if (readme) {
     # make new README file
     new_readme <- file.path(yr, date_chr, "README.md")
     if (!file.exists(new_readme)) {
@@ -58,7 +58,7 @@ use_tt_template <- function(date_chr = "2023-08-01",
       # replace placeholder text with variables
       readme_txt <- gsub(
         pattern = "yr", replace = yr, x = readme_txt
-        )
+      )
       readme_txt <- gsub(
         pattern = "date_chr", replace = date_chr, x = readme_txt
       )
