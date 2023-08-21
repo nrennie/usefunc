@@ -1,3 +1,8 @@
+## usefunc 1.1.1 2023_08_21
+
+* add `use_tt_template()` function
+* add #TidyTuesday template functions
+
 ## usefunc 1.1.0 2023_07_11
 
 * add `viz_missing()` function
