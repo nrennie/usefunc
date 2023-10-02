@@ -3,7 +3,7 @@ author: Nicola Rennie
 categories:
   - R
 date: ""
-slug: "blog-title"
+slug: ""
 draft: false
 excerpt: ""
 layout: blog-single
