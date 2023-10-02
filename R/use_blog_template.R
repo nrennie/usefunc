@@ -28,11 +28,17 @@ use_blog_template <- function(date_chr = "2023-08-01",
                                    mustWork = TRUE
     ))
     # replace placeholder text with variables
-    # r_txt <- gsub(
-    #   pattern = "yr",
-    #   replacement = paste0("\"", yr, "\""),
-    #   x = r_txt
-    # )
+    r_txt <- gsub(
+      pattern = paste0("date: ", "\"", "\""),
+      replacement = paste0("date: ", "\"", date_chr, "\""),
+      x = r_txt
+    )
+    # replace placeholder text with variables
+    r_txt <- gsub(
+      pattern = paste0("slug: ", "\"", "\""),
+      replacement = paste0("slug: ", "\"", slug, "\""),
+      x = r_txt
+    )
     # write to new file
     writeLines(r_txt, con = new_file)
     message("'index.md' contents copied")
