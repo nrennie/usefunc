@@ -1,6 +1,5 @@
 ## usefunc 1.1.2 2023_10_02
 
-* add `is_dots_empty()` function
 * add `use_blog_template()` function
 * add blog template files
 
