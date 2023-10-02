@@ -24,8 +24,8 @@ use_blog_template <- function(date_chr = "2023-08-01",
 
     # copy lines to .R file
     r_txt <- readLines(system.file("blog-template.md",
-                                   package = "usefunc",
-                                   mustWork = TRUE
+      package = "usefunc",
+      mustWork = TRUE
     ))
     # replace placeholder text with variables
     r_txt <- gsub(

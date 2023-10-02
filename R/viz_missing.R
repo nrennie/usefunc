@@ -20,9 +20,11 @@ viz_missing <- function(data,
   is_missing <- data |>
     dplyr::mutate(dplyr::across(dplyr::everything(), ~ .x %in% missing)) |>
     tibble::rownames_to_column() |>
-    tidyr::pivot_longer(cols = -.data$rowname,
-                        names_to = "colname",
-                        values_to = "value") |>
+    tidyr::pivot_longer(
+      cols = -.data$rowname,
+      names_to = "colname",
+      values_to = "value"
+    ) |>
     # arrange axes in same order as appear in data
     dplyr::mutate(
       colname = factor(.data$colname, levels = colnames(data)),
@@ -48,20 +50,27 @@ viz_missing <- function(data,
       breaks = c("TRUE", "FALSE")
     ) +
     ggplot2::theme_minimal() +
-    ggplot2::theme(plot.margin = ggplot2::margin(10, 10, 10, 10),
-                   legend.position = "top")
+    ggplot2::theme(
+      plot.margin = ggplot2::margin(10, 10, 10, 10),
+      legend.position = "top"
+    )
   if (!show_rownames) {
     g <- g +
-      ggplot2::theme(axis.text.y = ggplot2::element_blank(),
-                     axis.title.y = ggplot2::element_blank())
+      ggplot2::theme(
+        axis.text.y = ggplot2::element_blank(),
+        axis.title.y = ggplot2::element_blank()
+      )
   }
   if (show_colnames) {
     g <- g + ggplot2::theme(
-      axis.text.x = ggplot2::element_text(angle = 45, hjust = 1))
+      axis.text.x = ggplot2::element_text(angle = 45, hjust = 1)
+    )
   } else {
     g <- g +
-      ggplot2::theme(axis.text.x = ggplot2::element_blank(),
-                     axis.title.x = ggplot2::element_blank())
+      ggplot2::theme(
+        axis.text.x = ggplot2::element_blank(),
+        axis.title.x = ggplot2::element_blank()
+      )
   }
   return(g)
 }
