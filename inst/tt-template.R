@@ -53,7 +53,7 @@ social <- nrBrand::social_caption(
   bg_colour = bg_col,
   icon_colour = highlight_col,
   font_colour = text_col,
-  font_family = "roboto"
+  font_family = body_font
 )
 title <- ""
 st <- ""
