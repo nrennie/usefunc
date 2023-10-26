@@ -21,11 +21,14 @@ font_add_google("Roboto", "roboto")
 showtext_auto()
 
 
-# Define colours ----------------------------------------------------------
+# Define colours and fonts-------------------------------------------------
 
 bg_col <- ""
 text_col <- ""
 highlight_col <- ""
+
+body_font <- "roboto"
+title_font <- "roboto"
 
 
 # Data wrangling ----------------------------------------------------------
@@ -61,6 +64,20 @@ cap <- paste0(
 
 # Plot --------------------------------------------------------------------
 
+
+theme(
+  plot.margin = margin(5, 5, 5, 5),
+  plot.background = element_rect(fill = bg_col, colour = bg_col),
+  panel.background = element_rect(fill = bg_col, colour = bg_col),
+  plot.caption = element_textbox_simple(
+    colour = text_col,
+    hjust = 0.5,
+    halign = 0.5,
+    margin = margin(b = 10, t = 10),
+    lineheight = 0.5,
+    family = body_font
+  )
+)
 
 
 # Save gif ----------------------------------------------------------------
