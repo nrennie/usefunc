@@ -1,3 +1,7 @@
+## usefunc 1.1.3 2024_02_13
+
+* Update tidytuesday template file
+
 ## usefunc 1.1.2 2023_10_02
 
 * add `use_blog_template()` function
