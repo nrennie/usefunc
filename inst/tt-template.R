@@ -58,7 +58,7 @@ social <- nrBrand::social_caption(
 title <- ""
 st <- ""
 cap <- paste0(
-  "**Data**: <br>", social
+  "**Data**: <br>**Graphic**:", social
 )
 
 
@@ -69,11 +69,27 @@ theme(
   plot.margin = margin(5, 5, 5, 5),
   plot.background = element_rect(fill = bg_col, colour = bg_col),
   panel.background = element_rect(fill = bg_col, colour = bg_col),
+  plot.title = element_textbox_simple(
+    colour = text_col,
+    hjust = 0.5,
+    halign = 0.5,
+    margin = margin(b = 10, t = 5),
+    lineheight = 0.5,
+    family = title_font
+  ),
+  plot.subtitle = element_textbox_simple(
+    colour = text_col,
+    hjust = 0.5,
+    halign = 0.5,
+    margin = margin(b = 10, t = 5),
+    lineheight = 0.5,
+    family = body_font
+  ),
   plot.caption = element_textbox_simple(
     colour = text_col,
     hjust = 0.5,
     halign = 0.5,
-    margin = margin(b = 10, t = 10),
+    margin = margin(b = 5, t = 10),
     lineheight = 0.5,
     family = body_font
   )
