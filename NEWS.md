@@ -1,6 +1,7 @@
 ## usefunc 1.1.4 2024_07_10
 
 * Add `att_from_pyscript()` function
+* Update blog template
 
 ## usefunc 1.1.3 2024_02_13
 
