@@ -3,6 +3,7 @@
 export("%notin%")
 export(US_abb_to_name)
 export(US_name_to_abb)
+export(att_from_pyscript)
 export(beta_params)
 export(complementary_color)
 export(complementary_colour)
