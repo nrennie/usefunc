@@ -12,7 +12,7 @@ att_from_pyscript <- function(file) {
   file_txt <- readLines(file)
   import_lines <- file_txt[1:(which(file_txt == "")[1] - 1)]
   output <- character(length = length(import_lines))
-  for (i in 1:length(import_lines)) {
+  for (i in seq_along(length(import_lines))) {
     if (stringr::str_starts(import_lines[i], "import")) {
       output[i] <- stringr::str_extract(import_lines[i], "(?<=import )(\\w+)")
     } else if (stringr::str_starts(import_lines[i], "from")) {
