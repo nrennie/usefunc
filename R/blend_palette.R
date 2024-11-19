@@ -22,7 +22,7 @@ blend_palette <- function(palette, blend_colour, view_palette = FALSE) {
   )
   output <- unname(output)
   if (view_palette) {
-    monochromeR::view_palette(output)
+    print(monochromeR::view_palette(output))
   }
   return(output)
 }
