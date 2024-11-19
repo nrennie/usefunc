@@ -1,3 +1,8 @@
+## usefunc 1.1.6 2024_11_19
+
+* Add `blend_colours()` function
+* Add {monochromeR} to Imports
+
 ## usefunc 1.1.5 2024_11_17
 
 * Add `resample()` function

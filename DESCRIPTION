@@ -1,6 +1,6 @@
 Package: usefunc
 Title: Useful Functions
-Version: 1.1.5
+Version: 1.1.6
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
@@ -20,6 +20,7 @@ Imports:
   ggplot2,
   knitr,
   lubridate,
+  monochromeR,
   plotwidgets,
   purrr,
   rd2list,
