@@ -19,6 +19,7 @@ tuesdata <- tidytuesdayR::tt_load(date_chr)
 
 font_add_google("Roboto", "roboto")
 showtext_auto()
+showtext_opts(dpi = 300)
 
 
 # Define colours and fonts-------------------------------------------------
@@ -67,21 +68,25 @@ cap <- paste0(
 
 theme(
   plot.margin = margin(5, 5, 5, 5),
+  plot.title.position = "plot",
+  plot.caption.position = "plot",
   plot.background = element_rect(fill = bg_col, colour = bg_col),
   panel.background = element_rect(fill = bg_col, colour = bg_col),
   plot.title = element_textbox_simple(
     colour = text_col,
     hjust = 0.5,
     halign = 0.5,
-    margin = margin(b = 10, t = 5),
+    margin = margin(b = 5, t = 5),
     lineheight = 0.5,
-    family = title_font
+    family = title_font,
+    face = "bold",
+    size = rel(1.8)
   ),
   plot.subtitle = element_textbox_simple(
     colour = text_col,
     hjust = 0.5,
     halign = 0.5,
-    margin = margin(b = 10, t = 5),
+    margin = margin(b = 5, t = 5),
     lineheight = 0.5,
     family = body_font
   ),
@@ -89,7 +94,7 @@ theme(
     colour = text_col,
     hjust = 0.5,
     halign = 0.5,
-    margin = margin(b = 5, t = 10),
+    margin = margin(b = 5, t = 5),
     lineheight = 0.5,
     family = body_font
   )
@@ -97,6 +102,15 @@ theme(
 
 
 # Save gif ----------------------------------------------------------------
+
+ggsave(
+  filename = file.path(yr, date_chr, paste0(date_strip, ".png")),
+  height = 5,
+  width = 7,
+  bg = bg_col,
+  units = "in",
+  dpi = 300
+)
 
 gg_playback(
   name = file.path(yr, date_chr, paste0(date_strip, ".gif")),
