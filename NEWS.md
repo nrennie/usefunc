@@ -1,3 +1,7 @@
+## usefunc 1.1.7 2025_03_11
+
+* Add Python version of TidyTuesday template
+
 ## usefunc 1.1.6 2024_11_19
 
 * Add `blend_palette()` function
