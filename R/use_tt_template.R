@@ -84,8 +84,6 @@ use_tt_template <- function(date_chr = "2023-08-01",
     }
   }
 
-
-
   if (readme) {
     # make new README file
     new_readme <- file.path(yr, date_chr, "README.md")

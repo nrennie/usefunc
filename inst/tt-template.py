@@ -33,5 +33,5 @@ cap <- ""
 
 # Save --------------------------------------------------------------------
 
-fpath = os.path.join(yr, date_chr, f"{date_strip}.png")
+fpath = os.path.join(yr, date_chr, date_strip, ".png")
 g.save(fpath, height=6, width=6, units="in")
