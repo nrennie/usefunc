@@ -8,7 +8,7 @@ import os
 # Load data ---------------------------------------------------------------
 
 PyDyTuesday.get_date(date_chr)
-tt_data = pandas.read_csv()
+tt_data = pd.read_csv()
 
 
 # Define colours ----------------------------------------------------------
