@@ -29,8 +29,8 @@ use_tt_template <- function(date_chr = "2023-08-01",
       message("Created '.R' file")
       # copy lines to .R file
       r_txt <- readLines(system.file("tt-template.R",
-                                     package = "usefunc",
-                                     mustWork = TRUE
+        package = "usefunc",
+        mustWork = TRUE
       ))
       # replace placeholder text with variables
       r_txt <- gsub(
@@ -59,8 +59,8 @@ use_tt_template <- function(date_chr = "2023-08-01",
       message("Created '.py' file")
       # copy lines to .py file
       r_txt <- readLines(system.file("tt-template.py",
-                                     package = "usefunc",
-                                     mustWork = TRUE
+        package = "usefunc",
+        mustWork = TRUE
       ))
       # replace placeholder text with variables
       r_txt <- gsub(
@@ -83,8 +83,8 @@ use_tt_template <- function(date_chr = "2023-08-01",
       message("'.py' contents copied")
     }
   }
-  
-  
+
+
 
   if (readme) {
     # make new README file
