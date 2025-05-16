@@ -1,11 +1,11 @@
 Package: usefunc
 Title: Useful Functions
-Version: 1.1.7
+Version: 1.1.8
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
            role = c("aut", "cre"),
-           email = "nrennie35@gmail.com")
+           email = "nrennie.research@gmail.com")
 Description: A collection of useful functions not currently in base R.
 License: CC0
 Encoding: UTF-8

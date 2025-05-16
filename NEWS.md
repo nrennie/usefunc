@@ -1,3 +1,7 @@
+## usefunc 1.1.8 2025_05_16
+
+* Make sure `is_even()` and `is_odd()` are vectorised
+
 ## usefunc 1.1.7 2025_03_11
 
 * Add Python version of TidyTuesday template

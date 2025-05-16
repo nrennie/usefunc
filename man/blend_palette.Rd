@@ -7,9 +7,11 @@
 blend_palette(palette, blend_colour, view_palette = FALSE)
 }
 \arguments{
-\item{palette}{The starting vector for the palette, which must be either be recognised colour names (e.g. "blue") or hex colour codes (e.g. "#ffffff").}
+\item{palette}{The starting vector for the palette, which must be either be
+recognised colour names (e.g. "blue") or hex colour codes (e.g. "#ffffff").}
 
-\item{blend_colour}{The colour to blend with, which must be either be a recognised colour name (e.g. "blue") or a hex colour code (e.g. "#ffffff").}
+\item{blend_colour}{The colour to blend with, which must be either be a
+recognised colour name (e.g. "blue") or a hex colour code (e.g. "#ffffff").}
 
 \item{view_palette}{Boolean whether or not to view the palette.}
 }
