@@ -6,9 +6,5 @@
 #' @return A boolean.
 #' @export
 is_even <- function(x) {
-  if ((x %% 2) == 0) {
-    return(TRUE)
-  } else {
-    return(FALSE)
-  }
+  return((x %% 2) == 0)
 }
