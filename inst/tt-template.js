@@ -41,12 +41,19 @@ function chart(data) {
       .style("font-weight", "bold");
 
   // Subtitle
-  svg.append("text")
-      .attr("text-anchor", "left")
-      .attr("y", 40)
-      .attr("x", marginLeft)
-      .text("Subtitle")
-      .style("font-size", "12px");
+  svg
+    .append("foreignObject")
+    .attr("x", marginLeft)
+    .attr("y", 60)
+    .attr("width", 900)
+    .attr("height", 100)
+    .append("xhtml:div")
+    .style("font-size", "24px")
+    .style("line-height", "1.4")
+    .style("text-align", "left")
+    .html(
+      "Subtitle"
+    );
 
   // Caption
   svg.append("text")
