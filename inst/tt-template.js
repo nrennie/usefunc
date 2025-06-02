@@ -2,20 +2,23 @@ function chart(data) {
   // Set the dimensions of the chart
   const width = 600;
   const height = 400;
-  const padding = 20;
+  const marginTop = 60;
+  const marginRight = 20;
+  const marginLeft = 20;
+  const marginBottom = 30;
 
   // Select the chart container and clear any existing content
   const chartContainer = d3.select("#chart");
 
   const x = d3
     .scaleLinear()
-    .domain([0, 100])
-    .range([padding, width - padding]);
+    .domain([0.5, 10.5])
+    .range([marginLeft, width - marginRight]);
 
   const y = d3
     .scaleLinear()
-    .domain([0, 100])
-    .range([height - padding, padding]);
+    .domain([0.5, 10.5])
+    .range([height - marginBottom, marginTop]);
 
   // Create the SVG container for the new pie chart
   const svg = chartContainer
@@ -27,6 +30,31 @@ function chart(data) {
     .append("g");
 
   // Plot goes here
+
+  // Text
+  svg.append("text")
+      .attr("text-anchor", "left")
+      .attr("y", 20)
+      .attr("x", marginLeft)
+      .text("Title.")
+      .style("font-size", "16px")
+      .style("font-weight", "bold");
+
+  // Subtitle
+  svg.append("text")
+      .attr("text-anchor", "left")
+      .attr("y", 40)
+      .attr("x", marginLeft)
+      .text("Subtitle")
+      .style("font-size", "12px");
+
+  // Caption
+  svg.append("text")
+      .attr("text-anchor", "left")
+      .attr("y", height - 10)
+      .attr("x", marginLeft)
+      .text("Data: ")
+      .style("font-size", "10px");
 }
 
 d3.csv("data/data.csv", (d) => ({
