@@ -24,8 +24,7 @@ function chart(data) {
     .attr("preserveAspectRatio", "xMidYMid meet")
     .style("width", "100%")
     .style("height", "auto")
-    .append("g")
-    .attr("transform", `translate(${width / 2}, ${height / 2})`);
+    .append("g");
 
   // Plot goes here
 }
