@@ -15,7 +15,7 @@ function chart(data) {
   const y = d3
     .scaleLinear()
     .domain([0, 100])
-    .range([padding, height - padding]);
+    .range([height - padding, padding]);
 
   // Create the SVG container for the new pie chart
   const svg = chartContainer
