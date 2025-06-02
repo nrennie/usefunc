@@ -11,7 +11,7 @@ use_tt_template(date_chr = "2023-08-01", readme = TRUE, lang = "R")
 
 \item{readme}{Boolean indicating whether to also use README template.}
 
-\item{lang}{Language, either \code{"R"} or \code{"Python"}}
+\item{lang}{Language, either \code{"R"}, \code{"Python"}, or \code{"D3"}.}
 }
 \value{
 a message if template file was successfully copied over
