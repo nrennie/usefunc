@@ -31,14 +31,21 @@ function chart(data) {
 
   // Plot goes here
 
-  // Text
-  svg.append("text")
-      .attr("text-anchor", "left")
-      .attr("y", 20)
-      .attr("x", marginLeft)
-      .text("Title.")
-      .style("font-size", "16px")
-      .style("font-weight", "bold");
+  // Title
+  svg
+    .append("foreignObject")
+    .attr("x", marginLeft)
+    .attr("y", 10)
+    .attr("width", 900)
+    .attr("height", 100)
+    .append("xhtml:div")
+    .style("font-size", "32px")
+    .style("font-weight", "bold")
+    .style("line-height", "1.4")
+    .style("text-align", "left")
+    .html(
+      "Title <span style='color: #A30000;'>Highlight</span>"
+    );
 
   // Subtitle
   svg
@@ -48,7 +55,7 @@ function chart(data) {
     .attr("width", 900)
     .attr("height", 100)
     .append("xhtml:div")
-    .style("font-size", "24px")
+    .style("font-size", "26px")
     .style("line-height", "1.4")
     .style("text-align", "left")
     .html(
@@ -56,12 +63,19 @@ function chart(data) {
     );
 
   // Caption
-  svg.append("text")
-      .attr("text-anchor", "left")
-      .attr("y", height - 10)
-      .attr("x", marginLeft)
-      .text("Data: ")
-      .style("font-size", "10px");
+  svg
+    .append("foreignObject")
+    .attr("x", marginLeft)
+    .attr("y", height - 40)
+    .attr("width", 900)
+    .attr("height", 100)
+    .append("xhtml:div")
+    .style("font-size", "26px")
+    .style("line-height", "1.4")
+    .style("text-align", "left")
+    .html(
+      "<b>Data:</b> ... | <b>Graphic</b>: Nicola Rennie (<i class='fa-brands fa-github'></i> GitHub)"
+    );
 }
 
 d3.csv("data/data.csv", (d) => ({
