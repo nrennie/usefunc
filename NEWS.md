@@ -1,3 +1,8 @@
+## usefunc 1.1.9 2025_06_02
+
+* Update `use_tt_template()` for D3 template
+* Add D3 template files
+
 ## usefunc 1.1.8 2025_05_16
 
 * Make sure `is_even()` and `is_odd()` are vectorised

@@ -1,6 +1,6 @@
 Package: usefunc
 Title: Useful Functions
-Version: 1.1.8
+Version: 1.1.9
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
