@@ -1,4 +1,4 @@
-function chart() {
+function chart(data) {
   // Set the dimensions of the chart
   const width = 600;
   const height = 400;
@@ -19,6 +19,9 @@ function chart() {
   // Plot goes here
 }
 
-window.onload = function () {
-  chart();
-};
+d3.csv("data/data.csv", (d) => ({
+  num: +d.num,
+  char: d.char,
+})).then((data) => {
+  chart(data);
+});
