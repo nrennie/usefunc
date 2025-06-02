@@ -2,9 +2,20 @@ function chart(data) {
   // Set the dimensions of the chart
   const width = 600;
   const height = 400;
+  const padding = 20;
 
   // Select the chart container and clear any existing content
   const chartContainer = d3.select("#chart");
+
+  const x = d3
+    .scaleLinear()
+    .domain([0, 100])
+    .range([padding, width - padding]);
+
+  const y = d3
+    .scaleLinear()
+    .domain([0, 100])
+    .range([padding, height - padding]);
 
   // Create the SVG container for the new pie chart
   const svg = chartContainer
