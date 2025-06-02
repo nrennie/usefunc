@@ -1,7 +1,7 @@
 #' Create folder and files for #TidyTuesday data viz
 #' @param date_chr Date of #TidyTuesday in yyyy-mm-dd format.
 #' @param readme Boolean indicating whether to also use README template.
-#' @param lang Language, either `"R"` or `"Python"`
+#' @param lang Language, either `"R"`, `"Python"`, or `"D3"`.
 #' @return a message if template file was successfully copied over
 #' @export
 
@@ -81,6 +81,33 @@ use_tt_template <- function(date_chr = "2023-08-01",
       # write to new file
       writeLines(r_txt, con = new_file)
       message("'.py' contents copied")
+    }
+  } else if (lang == "D3") {
+    new_file <- file.path(yr, date_chr, paste0(date_strip, ".js"))
+    if (!file.exists(new_file)) {
+      file.create(new_file)
+      message("Created '.js' file")
+      js_txt <- readLines(system.file("tt-template.js",
+        package = "usefunc",
+        mustWork = TRUE
+      ))
+      writeLines(js_txt, con = new_file)
+      message("'.js' contents copied")
+    }
+    new_html_file <- file.path(yr, date_chr, "index.html")
+    if (!file.exists(new_html_file)) {
+      file.create(new_html_file)
+      message("Created 'index.html' file")
+      html_txt <- readLines(system.file("tt-template.html",
+        package = "usefunc",
+        mustWork = TRUE
+      ))
+      # replace placeholder text with variables
+      new_html_txt <- gsub(
+        pattern = "yr", replacement = yr, x = html_txt
+      )
+      writeLines(new_html_txt, con = new_html_file)
+      message("'index.html' contents copied")
     }
   }
 
