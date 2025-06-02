@@ -104,7 +104,7 @@ use_tt_template <- function(date_chr = "2023-08-01",
       ))
       # replace placeholder text with variables
       new_html_txt <- gsub(
-        pattern = "yr", replacement = yr, x = html_txt
+        pattern = "date_strip", replacement = date_strip, x = html_txt
       )
       writeLines(new_html_txt, con = new_html_file)
       message("'index.html' contents copied")
