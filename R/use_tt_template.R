@@ -1,13 +1,13 @@
 #' Create folder and files for #TidyTuesday data viz
 #' @param date_chr Date of #TidyTuesday in yyyy-mm-dd format.
-#' @param readme Boolean indicating whether to also use README template.
 #' @param lang Language, either `"R"`, `"Python"`, or `"D3"`.
+#' @param readme Boolean indicating whether to also use README template.
 #' @return a message if template file was successfully copied over
 #' @export
 
 use_tt_template <- function(date_chr = "2023-08-01",
-                            readme = TRUE,
-                            lang = "R") {
+                            lang = "R",
+                            readme = TRUE) {
   # check date in correct format
   if (is.na(as.Date(date_chr, format = "%Y-%m-%d"))) {
     stop("'date_chr' in incorrect format. Should be yyyy-mm-dd.")
@@ -94,6 +94,29 @@ use_tt_template <- function(date_chr = "2023-08-01",
       writeLines(js_txt, con = new_file)
       message("'.js' contents copied")
     }
+
+    new_r_file <- file.path(yr, date_chr, paste0(date_strip, ".R"))
+    if (!file.exists(new_r_file)) {
+      file.create(new_r_file)
+      message("Created '.R' file")
+      r_txt <- readLines(system.file("tt-js-template.R",
+        package = "usefunc",
+        mustWork = TRUE
+      ))
+      r_txt <- gsub(
+        pattern = "yr",
+        replacement = paste0("\"", yr, "\""),
+        x = r_txt
+      )
+      r_txt <- gsub(
+        pattern = "date_chr",
+        replacement = paste0("\"", date_chr, "\""),
+        x = r_txt
+      )
+      writeLines(r_txt, con = new_r_file)
+      message("'.R' contents copied")
+    }
+
     new_html_file <- file.path(yr, date_chr, "index.html")
     if (!file.exists(new_html_file)) {
       file.create(new_html_file)
@@ -118,10 +141,17 @@ use_tt_template <- function(date_chr = "2023-08-01",
       file.create(new_readme)
       message("Created 'README.md' file")
       # copy lines to README file
-      readme_txt <- readLines(system.file("tt-readme-template.md",
-        package = "usefunc",
-        mustWork = TRUE
-      ))
+      if (lang == "R") {
+        readme_txt <- readLines(system.file("tt-readme-r-template.md",
+          package = "usefunc",
+          mustWork = TRUE
+        ))
+      } else {
+        readme_txt <- readLines(system.file("tt-readme-template.md",
+          package = "usefunc",
+          mustWork = TRUE
+        ))
+      }
       # replace placeholder text with variables
       readme_txt <- gsub(
         pattern = "yr", replacement = yr, x = readme_txt

@@ -4,14 +4,14 @@
 \alias{use_tt_template}
 \title{Create folder and files for #TidyTuesday data viz}
 \usage{
-use_tt_template(date_chr = "2023-08-01", readme = TRUE, lang = "R")
+use_tt_template(date_chr = "2023-08-01", lang = "R", readme = TRUE)
 }
 \arguments{
 \item{date_chr}{Date of #TidyTuesday in yyyy-mm-dd format.}
 
-\item{readme}{Boolean indicating whether to also use README template.}
-
 \item{lang}{Language, either \code{"R"}, \code{"Python"}, or \code{"D3"}.}
+
+\item{readme}{Boolean indicating whether to also use README template.}
 }
 \value{
 a message if template file was successfully copied over
