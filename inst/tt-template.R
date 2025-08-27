@@ -59,7 +59,7 @@ social <- nrBrand::social_caption(
 title <- ""
 st <- ""
 cap <- paste0(
-  "**Data**: <br>**Graphic**:", social
+  "**Data**: <br>**Graphic**: ", social
 )
 
 
@@ -77,7 +77,6 @@ theme(
     hjust = 0.5,
     halign = 0.5,
     margin = margin(b = 5, t = 5),
-    lineheight = 0.5,
     family = title_font,
     face = "bold",
     size = rel(1.8)
@@ -87,7 +86,6 @@ theme(
     hjust = 0.5,
     halign = 0.5,
     margin = margin(b = 5, t = 5),
-    lineheight = 0.5,
     family = body_font
   ),
   plot.caption = element_textbox_simple(
@@ -95,7 +93,6 @@ theme(
     hjust = 0.5,
     halign = 0.5,
     margin = margin(b = 5, t = 5),
-    lineheight = 0.5,
     family = body_font
   )
 )
@@ -105,8 +102,8 @@ theme(
 
 ggsave(
   filename = file.path(yr, date_chr, paste0(date_strip, ".png")),
-  height = 5,
   width = 7,
+  height = 5,
   bg = bg_col,
   units = "in",
   dpi = 300
