@@ -1,3 +1,8 @@
+## usefunc 1.1.10 2025_08_27
+
+* Update template for TidyTuesday
+* Remove old blog post template
+
 ## usefunc 1.1.9 2025_06_02
 
 * Update `use_tt_template()` for D3 template
