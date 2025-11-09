@@ -1,0 +1,72 @@
+# usefunc
+
+An R package with some additional useful functions.
+
+## Installation
+
+``` r
+devtools::install_github("nrennie/usefunc")
+```
+
+or
+
+``` r
+remotes::install_github("nrennie/usefunc")
+```
+
+# Package index
+
+## All functions
+
+- [`US_abb_to_name()`](https://nrennie.github.io/usefunc/reference/US_abb_to_name.md)
+  : US State Abbreviation to Name
+- [`US_name_to_abb()`](https://nrennie.github.io/usefunc/reference/US_name_to_abb.md)
+  : US State Abbreviation to Name
+- [`att_from_pyscript()`](https://nrennie.github.io/usefunc/reference/att_from_pyscript.md)
+  : Extract imports from Python script
+- [`beta_params()`](https://nrennie.github.io/usefunc/reference/beta_params.md)
+  : Beta Distribution Parameters
+- [`blend_palette()`](https://nrennie.github.io/usefunc/reference/blend_palette.md)
+  : Blend a colour palette with another colour
+- [`complementary_color()`](https://nrennie.github.io/usefunc/reference/complementary_color.md)
+  : Find complementary color of a hex code
+- [`complementary_colour()`](https://nrennie.github.io/usefunc/reference/complementary_colour.md)
+  : Find complementary colour of a hex code
+- [`current_folder()`](https://nrennie.github.io/usefunc/reference/current_folder.md)
+  : Current folder
+- [`diffs()`](https://nrennie.github.io/usefunc/reference/diffs.md) :
+  First Differences
+- [`function_docs_table()`](https://nrennie.github.io/usefunc/reference/function_docs_table.md)
+  : Find title and description of all exported objects in package
+  documentation
+- [`get_docs()`](https://nrennie.github.io/usefunc/reference/get_docs.md)
+  : Find title and description of function in package documentation
+- [`` `%notin%` ``](https://nrennie.github.io/usefunc/reference/grapes-notin-grapes.md)
+  : Not In
+- [`hms_to_decimal()`](https://nrennie.github.io/usefunc/reference/hms_to_decimal.md)
+  : Hours:Minutes:Seconds to Decimal
+- [`is_even()`](https://nrennie.github.io/usefunc/reference/is_even.md)
+  : is_even
+- [`is_odd()`](https://nrennie.github.io/usefunc/reference/is_odd.md) :
+  is_odd
+- [`last()`](https://nrennie.github.io/usefunc/reference/last.md) : last
+- [`none()`](https://nrennie.github.io/usefunc/reference/none.md) : none
+- [`plot_theme()`](https://nrennie.github.io/usefunc/reference/plot_theme.md)
+  : plot_theme
+- [`random_hex()`](https://nrennie.github.io/usefunc/reference/random_hex.md)
+  : Generates a random hex code
+- [`rep_df()`](https://nrennie.github.io/usefunc/reference/rep_df.md) :
+  rep_df
+- [`resample()`](https://nrennie.github.io/usefunc/reference/resample.md)
+  : Resample
+- [`search_google()`](https://nrennie.github.io/usefunc/reference/search_google.md)
+  : Search Google
+- [`str_extract_between()`](https://nrennie.github.io/usefunc/reference/str_extract_between.md)
+  : String extract between
+- [`str_wrap_break()`](https://nrennie.github.io/usefunc/reference/str_wrap_break.md)
+  : str_wrap_break
+- [`use_tt_template()`](https://nrennie.github.io/usefunc/reference/use_tt_template.md)
+  : Create folder and files for \#TidyTuesday data viz
+- [`viz_missing()`](https://nrennie.github.io/usefunc/reference/viz_missing.md)
+  : Visualise missing data
+
