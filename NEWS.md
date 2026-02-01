@@ -1,3 +1,9 @@
+## usefunc 1.1.11 2026_02_01
+
+* Remove TidyTuesday templates (moved to `templates`)
+* Remove `viz_missing()` since functionality exists in `naniar`
+* Remove `plot_theme()` since in `nrBrand`
+
 ## usefunc 1.1.10 2025_08_27
 
 * Update template for TidyTuesday
