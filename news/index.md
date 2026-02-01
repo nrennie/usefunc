@@ -1,5 +1,11 @@
 # Changelog
 
+## usefunc 1.1.11 2026_02_01
+
+- Remove TidyTuesday templates (moved to `templates`)
+- Remove `viz_missing()` since functionality exists in `naniar`
+- Remove `plot_theme()` since in `nrBrand`
+
 ## usefunc 1.1.10 2025_08_27
 
 - Update template for TidyTuesday
@@ -7,9 +13,7 @@
 
 ## usefunc 1.1.9 2025_06_02
 
-- Update
-  [`use_tt_template()`](https://nrennie.github.io/usefunc/reference/use_tt_template.md)
-  for D3 template
+- Update `use_tt_template()` for D3 template
 - Add D3 template files
 
 ## usefunc 1.1.8 2025_05_16
@@ -55,16 +59,12 @@
 
 ## usefunc 1.1.1 2023_08_21
 
-- add
-  [`use_tt_template()`](https://nrennie.github.io/usefunc/reference/use_tt_template.md)
-  function
+- add `use_tt_template()` function
 - add \#TidyTuesday template functions
 
 ## usefunc 1.1.0 2023_07_11
 
-- add
-  [`viz_missing()`](https://nrennie.github.io/usefunc/reference/viz_missing.md)
-  function
+- add `viz_missing()` function
 - use base R pipe and force \> R 4.1
 
 ## usefunc 1.0.14 2023_04_15

@@ -35,8 +35,6 @@
   is_odd
 - [`last()`](https://nrennie.github.io/usefunc/reference/last.md) : last
 - [`none()`](https://nrennie.github.io/usefunc/reference/none.md) : none
-- [`plot_theme()`](https://nrennie.github.io/usefunc/reference/plot_theme.md)
-  : plot_theme
 - [`random_hex()`](https://nrennie.github.io/usefunc/reference/random_hex.md)
   : Generates a random hex code
 - [`rep_df()`](https://nrennie.github.io/usefunc/reference/rep_df.md) :
@@ -49,7 +47,3 @@
   : String extract between
 - [`str_wrap_break()`](https://nrennie.github.io/usefunc/reference/str_wrap_break.md)
   : str_wrap_break
-- [`use_tt_template()`](https://nrennie.github.io/usefunc/reference/use_tt_template.md)
-  : Create folder and files for \#TidyTuesday data viz
-- [`viz_missing()`](https://nrennie.github.io/usefunc/reference/viz_missing.md)
-  : Visualise missing data

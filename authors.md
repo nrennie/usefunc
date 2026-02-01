@@ -6,13 +6,13 @@
 
 ## Citation
 
-Rennie N (2025). *usefunc: Useful Functions*. R package version 1.1.10,
+Rennie N (2026). *usefunc: Useful Functions*. R package version 1.1.11,
 <https://nrennie.github.io/usefunc/>.
 
     @Manual{,
       title = {usefunc: Useful Functions},
       author = {Nicola Rennie},
-      year = {2025},
-      note = {R package version 1.1.10},
+      year = {2026},
+      note = {R package version 1.1.11},
       url = {https://nrennie.github.io/usefunc/},
     }
