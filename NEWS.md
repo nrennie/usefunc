@@ -1,3 +1,8 @@
+## usefunc 1.2.0 2026_03_01
+
+* Move colour functions (`blend_palette()` and `complimentary_color()`) 
+to `colorTools` package
+
 ## usefunc 1.1.11 2026_02_01
 
 * Remove TidyTuesday templates (moved to `templates`)
