@@ -22,5 +22,5 @@ Character string of hex codes
 
 ``` r
 random_hex(2)
-#> [1] "#1D6ADA" "#44BC15"
+#> [1] "#44E7EC" "#1D6ADA"
 ```

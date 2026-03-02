@@ -1,5 +1,10 @@
 # Changelog
 
+## usefunc 1.2.0 2026_03_01
+
+- Move colour functions (`blend_palette()` and `complimentary_color()`)
+  to `colorTools` package
+
 ## usefunc 1.1.11 2026_02_01
 
 - Remove TidyTuesday templates (moved to `templates`)
@@ -30,9 +35,7 @@
 
 ## usefunc 1.1.6 2024_11_19
 
-- Add
-  [`blend_palette()`](https://nrennie.github.io/usefunc/reference/blend_palette.md)
-  function
+- Add `blend_palette()` function
 - Add {monochromeR} to Imports
 
 ## usefunc 1.1.5 2024_11_17
@@ -96,9 +99,7 @@
 
 ## usefunc 1.0.10 2022_08_28
 
-- add
-  [`complementary_color()`](https://nrennie.github.io/usefunc/reference/complementary_color.md)
-  function
+- add `complementary_color()` function
 
 ## usefunc 1.0.9 2022_08_22
 

@@ -10,12 +10,6 @@
   : Extract imports from Python script
 - [`beta_params()`](https://nrennie.github.io/usefunc/reference/beta_params.md)
   : Beta Distribution Parameters
-- [`blend_palette()`](https://nrennie.github.io/usefunc/reference/blend_palette.md)
-  : Blend a colour palette with another colour
-- [`complementary_color()`](https://nrennie.github.io/usefunc/reference/complementary_color.md)
-  : Find complementary color of a hex code
-- [`complementary_colour()`](https://nrennie.github.io/usefunc/reference/complementary_colour.md)
-  : Find complementary colour of a hex code
 - [`current_folder()`](https://nrennie.github.io/usefunc/reference/current_folder.md)
   : Current folder
 - [`diffs()`](https://nrennie.github.io/usefunc/reference/diffs.md) :
